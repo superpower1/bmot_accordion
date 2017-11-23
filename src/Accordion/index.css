@@ -1,0 +1,261 @@
+/*------------------------------------*\
+--------accordion--------------------
+\*------------------------------------*/
+/*----- Accordion -----*/
+.accordion, .accordion * {
+  -webkit-box-sizing:border-box;
+  -moz-box-sizing:border-box;
+  box-sizing:border-box;
+}
+
+.accordion-section-content {
+  
+  
+  max-height: 0;
+  transition: max-height 1s;
+  opacity: 0;
+  display: block !important;
+  /*margin: 0 auto;
+  overflow: hidden;*/
+  background: #f7f7f7;
+  text-align: center;
+}
+
+.accordion-section-content.show{
+  opacity: 1;
+  max-height: 100%;
+  transition: all 1s;
+}
+
+/*----- Section Titles -----*/
+.accordion-section-title  {
+  width:100%;
+  padding:20px;
+  display:inline-block;
+  border-bottom:0px solid #fff;
+  background:#333;
+  position: relative;
+  transition:all linear 0.15s;
+  /* Type */
+  font-size:1.200em;
+    background: none;
+  color:#fff;
+    outline:0;
+}
+
+
+/*clicking on tabs*/
+.accordion-section-title.active   {
+    opacity:1 !important;
+
+  /* Type */
+
+}
+.accordion-section-title:hover{
+     opacity:.95 !important;
+
+}
+
+.accordion-section:last-child .accordion-section-title {
+  border-bottom:none;
+}
+
+
+.subheadings{
+    font-size: 18px;
+    line-height: 20px;
+    text-transform: uppercase;
+}
+/*----- Section Content -----*/
+
+
+#videosblock{
+    margin:auto;
+}
+
+/*all tab corners rounded*/
+.accordion-section-title{
+    border-radius:7px;
+
+}
+
+/*BACK TAB BACKGROUNDS*/
+#about{
+    background:linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.2)), url("http://wallpapercave.com/wp/vf8fLRu.jpg");
+    background-size: 100% ;
+    background-repeat: no-repeat;
+    opacity: .8;
+    background-position: 50% 30%;
+
+
+}
+
+#when{
+   background:linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.2)), url("http://wallpapercave.com/wp/vf8fLRu.jpg");
+    background-size: 100% ;
+    background-repeat: no-repeat;
+    opacity: .8;
+    background-position: 50% 42%;
+
+}
+
+
+
+#where{
+  background:linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.2)), url("http://wallpapercave.com/wp/vf8fLRu.jpg");
+     background-size: 100% ;
+    background-repeat: no-repeat;
+    opacity: .8;
+    background-position: 50% 54%;
+}
+
+#how{
+    background:linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.2)), url("http://wallpapercave.com/wp/vf8fLRu.jpg");
+     background-size: 100% ;
+    background-repeat: no-repeat;
+    opacity: .8;
+    background-position: 50% 66%;
+}
+
+#around{
+   background:linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.2)), url("http://wallpapercave.com/wp/vf8fLRu.jpg");
+     background-size: 100% ;
+    background-repeat: no-repeat;
+    opacity: .8;
+    background-position: 50% 78%;
+
+}
+
+
+#activ{
+   background:linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.2)), url("http://wallpapercave.com/wp/vf8fLRu.jpg");
+     background-size: 100% ;
+    background-repeat: no-repeat;
+    opacity: .8;
+    background-position: 50% 90%;
+}
+
+#stay{
+  background:linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.2)), url("http://wallpapercave.com/wp/vf8fLRu.jpg");
+    background-size: 100% auto ;
+    background-repeat: no-repeat;
+    opacity: .8;
+    background-position: 50% 100%;
+}
+
+
+#cost{
+   background:linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.2)), url("http://1920x1080hdwallpapers.com/image/201512/city/3654/fuji-landscape-japan-maple.jpg");
+    background-size: 100% ;
+    background-repeat: no-repeat;
+    opacity: .8;
+    background-position: 100%;
+}
+
+#tips{
+   background:linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.2)), url("http://1920x1080hdwallpapers.com/image/201512/city/3654/fuji-landscape-japan-maple.jpg");
+    background-size: 100% ;
+    background-repeat: no-repeat;
+    opacity: .8;
+    background-position: 100% 30%;
+}
+
+
+
+
+
+
+.accordion-section-title:hover{
+  transform: scale(1.01);
+  -moz-transform: scale(1.01);
+  -webkit-transform: scale(1.01);
+  -o-transform: scale(1.01);
+  -ms-transform: scale(1.01); /* IE 9 */
+}
+
+/*end of Tab Backgrounds*/
+
+#mapDiv{
+
+}
+
+#tourismentryblogs p{
+    display: inline ;
+    margin-right:30px;
+}
+
+#highandlow p{
+    text-align: left;
+}
+
+#highandlow ul, li {
+    text-align: left;
+}
+
+#holidaystemp * {
+    margin-right: 60px;
+}
+
+
+
+.itens div{
+    display: inline-block ;
+}
+
+
+.top10activities p{
+    display: inline-block;
+    text-align: center;
+    margin:auto;
+    width:100%;
+}
+
+.top8places div{
+    display: inline-block ;
+    margin:10px;
+}
+
+.touristoptions div{
+    display: inline-block ;
+    margin:10px;
+}
+
+
+.travellingoptions div{
+    display: inline-block ;
+    margin:10px;
+}
+
+
+
+
+
+
+
+@media (max-width: 1200px) {
+  .accordion-section-title {
+  background-size:130% !important;
+  }
+}
+@media (max-width: 1000px) {
+  .accordion-section-title {
+  background-size:150% !important;
+  }
+}
+
+@media (max-width: 800px) {
+  .accordion-section-title {
+  background-size:170% !important;
+  }
+}
+
+@media (max-width: 700px) {
+  .accordion-section-title {
+  background-size:190% !important;
+  }
+}
+@media (max-width: 600px) {
+  .accordion-section-title {
+  background-size:230% !important;
+  }
+}
