@@ -1,13 +1,12 @@
 import React, { Component } from 'react';
 import './App.css';
-import About from './AboutSection/About.js'
 import Accordion from './Accordion/Accordion.js'
+// import About from './Accordion/AboutSection/About.js'
 
 class App extends Component {
   render() {
     return (
-      <div>
-         
+      <div>      
         <Accordion></Accordion>
       </div>
       

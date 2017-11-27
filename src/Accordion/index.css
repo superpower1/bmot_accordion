@@ -8,6 +8,11 @@
   box-sizing:border-box;
 }
 
+.accordion {
+  width: 80%;
+  margin: 0 auto;
+}
+
 .accordion-section-content {
   
   
@@ -229,6 +234,22 @@
 
 
 
+.accordion-section .accordion-section-title span {
+    position: absolute;
+    right: 5px;
+    top: 15px;
+}
+
+.accordion-section .accordion-section-title span:before {
+  font-size: 24px;
+  transform: rotate(180deg);
+  transition: all 0.5s;
+}
+
+.accordion-section .accordion-section-title span.active:before {
+  transform: rotate(0deg);
+  transition: all 0.5s;
+}
 
 
 

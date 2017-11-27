@@ -1,6 +1,5 @@
 import React from 'react';
 import './index.css';
-// import './bootstrap.min.css';
 import classNames from 'classnames';
 
 class Loading extends React.Component {
@@ -220,6 +219,7 @@ class Accordion extends React.Component {
 				                    
 				                <div className="touristoptions">  
 			                        <div> 
+			                        test
 		                        {/*         
 		                        <img className="img-responsive" id="tourismimage" src={ab.tourism_office.tourism_office_image_link} alt="" />
                                 <div>
@@ -227,6 +227,7 @@ class Accordion extends React.Component {
                                 </div> 
 			                    */}        
 			                        </div>
+
 				                </div>
 							</div>
 						</div>
