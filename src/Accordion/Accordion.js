@@ -1,6 +1,11 @@
 import React from 'react';
 import './index.css';
 import classNames from 'classnames';
+import About from './AboutSection/About.js';
+import {
+	PanelGroup,
+	Panel
+} from 'react-bootstrap';
 
 class Loading extends React.Component {
 	render() {
@@ -12,6 +17,14 @@ class Loading extends React.Component {
 	}
 }
 
+class Sectionbtn extends React.Component {
+	render() {
+		return (
+			<button id="about" type="button" onClick={this.props.opensection} className={this.props.aboutbtnclass}>ABOUT<span className={this.props.aboutchevronclass}></span>
+			</button>
+		);
+	}
+}
 
 class Accordion extends React.Component {
 	constructor(props) {
@@ -31,7 +44,7 @@ class Accordion extends React.Component {
 				tips: false
 			}
 		}
-		
+
 	}
 
 	componentDidMount() {
@@ -50,7 +63,7 @@ class Accordion extends React.Component {
 				.catch(e => {
 					// handle error
 
-				})		
+				})
 
 	}
 
@@ -209,29 +222,37 @@ class Accordion extends React.Component {
 
 			return (
 				<div className="accordion">
+					<PanelGroup>
 
+					{/* <div className="accordion-section"> */}
 
-					<div className="accordion-section">
-						<button className={aboutBtnClass} id="about" onClick={this.openSection} type="button" data-toggle="collapse" data-target="#collapse1" aria-expanded="false" aria-controls="collapse1">ABOUT<span className={aboutChevronClass}></span></button>
+						<Panel header={
+							<div>
+								<Sectionbtn opensection={this.openSection} aboutbtnclass={this.aboutBtnClass} aboutchevronclass={this.aboutChevronClass}></Sectionbtn>
+							</div>
+						} eventKey="1" bsClass="accordion-section">
+
 						<div className="collapse" id="collapse1">
 							<div className={aboutContentClass}>
-							
-				                    
-				                <div className="touristoptions">  
-			                        <div> 
-			                        test
-		                        {/*         
+
+
+				                <div className="touristoptions">
+			                        <div>
+		                        {/*
 		                        <img className="img-responsive" id="tourismimage" src={ab.tourism_office.tourism_office_image_link} alt="" />
                                 <div>
                    					<a className="btn btn-primary" id="toptionslink1" href={ab.tourism_office.tourism_office_website_link}>LINK HERE</a>
-                                </div> 
-			                    */}        
+                                </div>
+			                    */}
 			                        </div>
+															<About></About>
 
 				                </div>
 							</div>
 						</div>
-					</div>
+					</Panel>
+
+					{/* </div> */}
 
 
 					<div className="accordion-section">
@@ -322,13 +343,12 @@ class Accordion extends React.Component {
 					</div>
 
 
+
+				</PanelGroup>
 				</div>
 			);
-		// }
-		
+
 	}
 }
 
 export default Accordion;
-
-		

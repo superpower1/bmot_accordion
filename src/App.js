@@ -1,15 +1,16 @@
 import React, { Component } from 'react';
 import './App.css';
-import Accordion from './Accordion/Accordion.js'
+import Accordion from './Accordion/Accordion.js';
 // import About from './Accordion/AboutSection/About.js'
+import Test from './BootstrapAccordion/Test.js';
 
 class App extends Component {
   render() {
     return (
-      <div>      
+      <div>
         <Accordion></Accordion>
       </div>
-      
+
     );
   }
 }
