@@ -36,10 +36,18 @@ class Test extends React.Component {
 
   handleSelect(key) {
     // alert(`selected ${key}`);
+    console.log(this.state); //null
     this.setState({ key });
   }
-  
+
+  // handleSelect = (key) => {
+  //   // alert(`selected ${key}`);
+  //   console.log(this.state); // {name: "first"}
+  //   this.setState({ key });
+  // }
+
   render() {
+
     const tabsInstance = (
       <Tab.Container id="left-tabs-example" defaultActiveKey="first">
         <Row className="clearfix">
@@ -75,7 +83,7 @@ class Test extends React.Component {
       </Tabs>
     );
 
-    return tabsInstance;
+    return defaultTabs;
   }
 }
 
