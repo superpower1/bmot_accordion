@@ -49,7 +49,7 @@ class Accordion extends React.Component {
 
 	componentDidMount() {
 
-		fetch(`http://35.160.199.90:12000/plans/584a1f0ca6f083ecb1173ded`)
+		fetch(`http://34.215.231.64:12000/plans/5849d8d6498c2e7a04871e7b`)
 				.then(response => {
 					response.json().then(result => {
 						// handle result
